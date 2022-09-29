@@ -1,0 +1,15 @@
+body {
+  margin: 2em 3em;
+}
+h1 {
+  width: 50%;
+  border: 2px dashed darkgray;
+  background-color: rgba(250, 235, 215, 0.808);
+  padding: 0.2em 0.5em;
+}
+
+p {
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 0 1em;
+}
