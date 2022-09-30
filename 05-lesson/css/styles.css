@@ -3,9 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  width: 400px;
-  border: 2px dashed darkgray;
+.container {
+  border: 10px double darkgray;
   background-color: rgba(250, 235, 215, 0.808);
-  padding: 0.5em;
+  font-size: 1.5rem;
+  margin: 1.5em;
+  padding: 1.5em;
+  outline: 5px solid rgb(73, 70, 73);
+  outline-offset: -20px;
+}
+
+.circle {
+  margin: 3rem auto;
+  background-color: gold;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50px;
+  outline: 2px solid red;
+  outline-offset: 0.25rem;
 }
