@@ -11,4 +11,18 @@ p {
 a {
   font-style: normal;
   text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: darkgoldenrod;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+a:active {
+  color: red;
 }
