@@ -3,3 +3,17 @@ body {
   font-size: 2rem;
   font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+ol, ul {
+  font-style: italic;
+  font-weight: 600;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  margin-left: 1em;
+}
+
+li span {
+  font-weight: 400;
+}
