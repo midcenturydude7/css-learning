@@ -7,11 +7,17 @@ body {
 ol, ul {
   font-style: italic;
   font-weight: 600;
+  line-height: 1.5em;
 }
 
 ol {
   list-style-type: decimal-leading-zero;
   margin-left: 1em;
+}
+
+ul li:nth-child(2) span {
+  color: royalblue;
+  font-weight: 600;
 }
 
 li span {
