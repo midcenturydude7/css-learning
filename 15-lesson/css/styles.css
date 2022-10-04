@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: /* Cambria,  */Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  min-height: 100vh;
+}
+
+header h1, main {
+  margin: 1rem;
+}
+
+.container {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 1rem;
+}
+
+.box {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.box:first-child {
+  background-color: blue;
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
