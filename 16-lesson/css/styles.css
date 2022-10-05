@@ -25,8 +25,15 @@ img { display: block; }
 /* End Utility Classes */
 
 body {
-  font-family: Nunito, serif;
+  font-family: Nunito, sans-serif;
+  min-height: 100vh;
   font-size: 2rem;
+  background-color: aliceblue;
+/*   background-image: url("../img/bubbles.png"), 
+                    linear-gradient(to left, steelblue, #fff);
+  background-repeat: repeat-y, no-repeat;
+  background-position: right, center;
+  background-size: 15%, auto; */
 }
 
 header h1 {
@@ -46,8 +53,9 @@ figcaption {
 .container {
   background-color: rgb(252, 210, 156);
   background-image: url(../img/map-2176x1451.png);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: top right;
 }
 
 .hero {
@@ -91,4 +99,16 @@ figcaption {
 .example img {
   width: 25%;
   height: auto;
+}
+
+.clip {
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  background-image: url("../img/scenic-2200x1331.png");
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: hsla(0, 0%, 0%, 0.30);
 }
