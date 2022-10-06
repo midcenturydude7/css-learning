@@ -9,17 +9,28 @@
 
 /* || VARIABLES */
 :root {
+  /* FONT */
+  --FF: "Nunito", sans-serif;
+  --FS: 1.5rem;
+  --FS-XL: 3rem;
+
   /* COLOR */
   --BGCOLOR: #475569;
   --ALT-BGCOLOR: #1E293B;
+  --RADIAL-COLOR: whitesmoke;
+  --LIGHT-COLOR: whitesmoke;
+  --DARK-COLOR: #000;
+
+  /* GENERAL */
+  --PADDING: 0.5rem;
 }
 
 /* || GENERAL STYLES */
 body {
-  font: 1.5rem Nunito, sans-serif;
+  font: var(--FS) var(--FF);
   min-height: 100vh;
   background-color: var(--BGCOLOR);
-  background-image: radial-gradient(whitesmoke, var(--BGCOLOR));
+  background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
   display: flex;
   flex-direction: column;
 }
@@ -34,7 +45,7 @@ header, nav, main, footer {
 header, footer {
   position: sticky;
   background-color: var(--ALT-BGCOLOR);
-  color: whitesmoke;
+  color: var(--LIGHT-COLOR);
 }
 
 header {
@@ -43,9 +54,9 @@ header {
 
 nav {
   background-color: white;
-  color: #000;
+  color: var(--DARK-COLOR);
   padding: 0.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--DARK-COLOR);
 }
 
 main {
@@ -60,7 +71,7 @@ footer {
 @media screen and (min-width: 576px) {
   body {
     background-color: green;
-    background-image: radial-gradient(whitesmoke, green);
+    background-image: radial-gradient(var(--RADIAL-COLOR), green);
   }
   
   nav {
@@ -72,7 +83,7 @@ footer {
 @media screen and (min-width: 768px) {
   body {
     background-color: gold;
-    background-image: radial-gradient(whitesmoke, gold);
+    background-image: radial-gradient(var(--RADIAL-COLOR), gold);
   }
 }
 
@@ -80,7 +91,7 @@ footer {
 @media screen and (min-width: 992px) {
   body {
     background-color: firebrick;
-    background-image: radial-gradient(whitesmoke, firebrick);
+    background-image: radial-gradient(var(--RADIAL-COLOR), firebrick);
   }
 }
 
@@ -88,7 +99,7 @@ footer {
 @media screen and (min-width: 1200px) {
   body {
     background-color: rebeccapurple;
-    background-image: radial-gradient(whitesmoke, rebeccapurple);
+    background-image: radial-gradient(var(--RADIAL-COLOR), rebeccapurple);
   }
 }
 
@@ -96,7 +107,7 @@ footer {
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
   body {
     background-color: dodgerblue;
-    background-image: radial-gradient(whitesmoke, dodgerblue);
+    background-image: radial-gradient(var(--RADIAL-COLOR), dodgerblue);
   }
 
   h1, h2 {
