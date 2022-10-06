@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Alkalami&family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 2rem;
+  min-height: 100vh;
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke, #475569);
+}
+
+header {
+  background-color: black;
+  color: white;
+}
