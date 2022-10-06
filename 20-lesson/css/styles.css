@@ -55,7 +55,7 @@ header {
 nav {
   background-color: white;
   color: var(--DARK-COLOR);
-  padding: 0.5rem;
+  padding: var(--PADDING);
   border-bottom: 2px solid var(--DARK-COLOR);
 }
 
