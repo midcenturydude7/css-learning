@@ -1,49 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Alkalami&family=Open+Sans&display=swap');
 
+/* || RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* || VARIABLES */
 :root {
   --HEADER-BGCOLOR: #333;
   --HEADER-COLOR: whitesmoke;
   --PADDING: 0.75rem;
 }
 
+/* || GENERAL STYLES */
 body {
   font-size: 2rem;
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   display: flex;
-  flex-flow: column nowrap;
 }
 
 header {
-  background-color: var(--HEADER-BGCOLOR);
-  padding: var(--PADDING);
-}
-
-header h1 {
-  color: var(--HEADER-COLOR);
-}
-
-main {
-  flex-grow: 1;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  gap: 2.25rem;
   justify-content: center;
   align-items: center;
-  gap: 2.25rem;
 }
 
-div {
+/* || BLOCKS */
+/* aka components */
+
+.btn {
   width: 100px;
   height: 100px;
-  border: 2px solid #000;
-  display: grid;
-  place-content: center;
   border-radius: 15px;
+  border: 2px solid #000;
   background-color: rgb(219, 218, 218);
+  display: inline;
 }
+
+/* || MODIFIERS */
+/* incremental style changes */
+
+/* Blocks with modifiers */
+.btn--secondary {
+  background-color: yellow;
+}
+
+.btn--lean {
+  transform: skewX(-10deg);
+}
+
+.btn--border-lg {
+  border: 5px solid rgb(80, 66, 66);
+}
+
+

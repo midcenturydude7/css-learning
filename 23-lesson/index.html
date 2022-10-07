@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,16 @@
   <title>CSS Organization</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header>
-    <h1>CSS Organization</h1>
-  </header>
 
-  <main>
-    <div class="square">🚀</div>
-    <div class="square">🔥</div>
-    <div class="square animate">🌮</div>
-  </main>
-  
+<body>
+  <header class="header">
+      <h1 class="header__title">BEM</h1>
+      <nav class="header__nav">
+        <button class="header__btn">🚀</button>
+        <button class="header__btn header__btn--secondary">🔥</button>
+        <button class="header__btn header__btn--lean header__btn--border-lg">🌮</button>
+      </nav>
+  </header>
 </body>
+
 </html>
