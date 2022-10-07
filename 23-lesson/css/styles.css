@@ -9,17 +9,41 @@
 :root {
   --HEADER-BGCOLOR: #333;
   --HEADER-COLOR: whitesmoke;
+  --PADDING: 0.75rem;
 }
 
 body {
   font-size: 2rem;
   font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 header {
   background-color: var(--HEADER-BGCOLOR);
+  padding: var(--PADDING);
 }
 
 header h1 {
   color: var(--HEADER-COLOR);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  display: grid;
+  place-content: center;
+  border-radius: 15px;
+  background-color: rgb(219, 218, 218);
 }
